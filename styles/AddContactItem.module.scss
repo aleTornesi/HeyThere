@@ -1,0 +1,13 @@
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div {
+        display: flex;
+        align-items: center;
+        >* {
+            margin: 20px;
+            color: rgb(125, 20, 20);
+        }
+    }
+}

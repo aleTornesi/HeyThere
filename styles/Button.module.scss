@@ -1,0 +1,19 @@
+@use 'variables';
+
+.root {
+    border: 0;
+    padding: 15px;
+    border-radius: 25px;
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.fg {
+    background-color: variables.$color;
+}
+
+.bg {
+    background-color: variables.$backgroundColor;
+}

@@ -1,0 +1,14 @@
+@use 'variables';
+
+.searchBar {
+    margin: 2%;
+}
+
+.canvas {
+    width: 50%;
+    margin: 2%;
+
+    hr {
+        color: variables.$color;
+    }
+}

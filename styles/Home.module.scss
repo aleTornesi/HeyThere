@@ -1,0 +1,157 @@
+@use 'variables';
+
+.rootOperations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+.actions {
+    button {
+        border: 0;
+        background-color: variables.$color;
+        padding: 15px;
+        border-radius: 25px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.inputIcons {
+    padding: 20px;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: variables.$backgroundColor;
+
+    
+    input {
+        margin: 0 20px;
+        width: 100%;
+        outline: 0;
+        border: 0;
+    }
+}
+
+.icon {
+    color: black;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin: 3%;
+}
+
+.contacts {
+    width: 30%;
+    >div>div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        height: fit-content;
+        
+        >div {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: fit-content;
+            img {
+                border-radius: 50%;
+                margin: 0 15px 0 0;
+            }
+
+            >div {
+                .lastMessage {
+                    color: grey;
+                }
+            }
+        }
+        >p {
+            position: absolute;
+            top: -15px;
+            right: 10px;
+            color: grey;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    hr {
+        color: variables.$backgroundColor
+    }
+}
+
+.chat {
+    position: fixed;
+    padding: 2%;
+    border-radius: 25px;
+    bottom: 45px;
+    left: 35%;
+    height: 70%;
+    width: 60%;
+    display: flex;
+    flex-direction: column-reverse;
+
+    .inputIcons {
+        width: 100%;
+        background-color: variables.$backgroundColor;
+
+        input {
+            background-color: inherit;
+        }
+    }
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    overflow-y: scroll;
+}
+
+.inputMessage {
+    display: flex;
+    align-items: center;
+    
+    button {
+        background-color: inherit;
+        border: 0;
+    }
+
+    >button {
+        margin: 15px;
+        width: 55px;
+        height: 55px;
+        //width: 2 * fit-content;
+        border-radius: 50%;
+        background-color: green;
+        color: white;
+        align-items: center;
+    }
+}
+
+.message {
+    margin: 10px;
+    padding: 25px;
+    max-width: 70%;
+}
+
+.sent {
+    align-self: flex-end;
+    background-color: #4E426D;
+    color: variables.$color;
+    border-radius: 25px 0 25px 25px;
+}
+
+.recieved {
+    background-color: variables.$backgroundColor;
+    border-radius: 0 25px 25px 25px;
+}

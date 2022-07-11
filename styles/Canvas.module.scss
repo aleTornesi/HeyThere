@@ -1,0 +1,7 @@
+@use 'variables';
+
+.root {
+    padding: 2%;
+    border-radius: 25px;
+    background-color: variables.$color;
+}

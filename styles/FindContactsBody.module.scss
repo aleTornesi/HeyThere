@@ -1,0 +1,9 @@
+@use 'variables';
+
+.root {
+    width: 50%;
+    margin: 2%;
+    hr {
+        color: variables.$color;
+    }
+}
